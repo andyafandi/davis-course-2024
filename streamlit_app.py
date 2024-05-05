@@ -52,7 +52,7 @@ components.html(
 x_data = [1, 2, 3, 4, 5]
 y_data = [10, 15, 13, 17, 20]
 
-st.write('<h1>Hello, *World!* :sunglasses:</>')
+st.write('Hello, *World!* :sunglasses:')
 # Line chart
 line_chart = go.Figure(data=go.Scatter(x=x_data, y=y_data, mode='lines', name='Line Chart'))
 # line_chart.show()
