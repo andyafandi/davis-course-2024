@@ -45,7 +45,7 @@ components.html(
       </div>
     </div>
     """,
-    height=600,
+    height=200,
 )
 
 # Sample data
