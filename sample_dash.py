@@ -1,10 +1,10 @@
 import plotly.graph_objs as go
 import plotly.express as px
 # import dash
-from dash import dcc
-# from dash import dhc as html
-# import dash_core_components as dcc
-import dash_html_components as html
+# from dash import dcc
+# # from dash import dhc as html
+# # import dash_core_components as dcc
+# import dash_html_components as html
 
 # Sample data
 x_data = [1, 2, 3, 4, 5]
