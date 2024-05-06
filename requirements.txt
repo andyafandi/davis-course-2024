@@ -4,6 +4,7 @@ plotly==5.22.0
 prophet
 matplotlib
 yfinance
-pandas_datareader
+pandas-datareader
 numpy
-glob
+datetime
+openpyxl
