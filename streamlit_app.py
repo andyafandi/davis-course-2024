@@ -7,7 +7,13 @@ import streamlit as st
 # # import dash_core_components as dcc
 # import dash_html_components as html
 import streamlit.components.v1 as components
-
+data_company = ["PT A", "PT B", "PT C"]
+choice = st.sidebar.selectbox(
+                "Select Company Name", 
+                range(1,  len(data_company)+1) ,
+                format_func=lambda x: data_company,
+                key="selectbox"
+            )
 # bootstrap 4 collapse example
 components.html(
     """
