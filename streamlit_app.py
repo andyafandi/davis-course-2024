@@ -11,7 +11,7 @@ data_company = ["PT A", "PT B", "PT C"]
 choice = st.sidebar.selectbox(
                 "Select Company Name", 
                 range(1,  len(data_company)+1) ,
-                format_func=lambda x: data_company,
+                format_func=lambda x: data_company[x],
                 key="selectbox"
             )
 # bootstrap 4 collapse example
