@@ -75,7 +75,7 @@ st.plotly_chart(line_chart, use_container_width=True)
 
 # Bar chart
 # bar_chart = go.Figure(data=go.Bar(x=x_data, y=y_data))
-bar_chart = go.Figure(data=go.Bar(x=data_sample['company'], y=data_sample['sales']), title='Bar Chart')
+bar_chart = go.Figure(data=go.Bar(x=data_sample['company'], y=data_sample['sales'], title='Bar Chart')
 # bar_chart.show()
 st.plotly_chart(bar_chart, use_container_width=True)
 
