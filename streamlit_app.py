@@ -50,13 +50,17 @@ import streamlit.components.v1 as components
 # )
 
 # Sample data
-x_data = [1, 2, 3, 4, 5]
-y_data = [10, 15, 13, 17, 20]
+# x_data = [1, 2, 3, 4, 5]
+# y_data = [10, 15, 13, 17, 20]
 
 data_sample = {
-  "rowNum": [1, 2, 3, 4, 5],
-  "company": ["PT ABC", "PT BCG", "PT CFM", "PT DAD", "PT EJALAN"],
-  "sales": [10, 15, 13, 17, 20]
+  "month": [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6],
+  "company": ["PT ABC", "PT ABC", "PT ABC", "PT ABC", "PT ABC", "PT ABC", "PT ABC", "PT ABC", "PT ABC", "PT ABC", "PT ABC", "PT ABC", "PT ABC", "PT ABC", 
+             "PT ABC", "PT ABC", "PT ABC", "PT ABC", "PT XYZ", "PT XYZ", "PT XYZ", "PT XYZ", "PT XYZ", "PT XYZ", "PT XYZ", "PT XYZ", "PT XYZ", "PT XYZ", 
+             "PT XYZ", "PT XYZ", "PT XYZ", "PT XYZ", "PT XYZ", "PT XYZ", "PT XYZ", "PT XYZ"],
+  "year":[2021,2021,2021,2021,2021,2021,2022,2022,2022,2022,2022,2022,2023,2023,2023,2023,2023,2023,2021,2021,2021,2021,2021,2021,2022,2022,2022,2022,2022,2022, 
+2023,2023,2023,2023,2023,2023]
+  "sales": [10, 15, 13, 17, 20, 18, 12, 14, 14, 16, 19, 20, 10, 17, 14, 16, 19, 22, 23, 25, 19, 27, 29, 30, 24, 20, 21, 22, 25, 30, 35, 22, 23, 25, 19, 27]
 }
 
 choice = st.sidebar.selectbox(
