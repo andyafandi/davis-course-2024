@@ -73,19 +73,19 @@ df = pd.DataFrame(data_sample)
 st.write('Hello, *World!* :sunglasses:')
 # Line chart
 # line_chart = go.Figure(data=go.Scatter(x=x_data, y=y_data, mode='lines', name='Line Chart'))
-line_chart = go.Figure(data=go.Scatter(x=data_sample['company'], y=data_sample['sales'], mode='lines', name='Line Chart'))
+line_chart = go.Figure(data=go.Scatter(x=data_sample['year'], y=data_sample['sales'], mode='lines', name='Line Chart'))
 # line_chart.show()
 st.plotly_chart(line_chart, use_container_width=True)
 
 # Bar chart
 # bar_chart = go.Figure(data=go.Bar(x=x_data, y=y_data))
-bar_chart = go.Figure(data=go.Bar(x=data_sample['company'], y=data_sample['sales']))
+bar_chart = go.Figure(data=go.Bar(x=data_sample['year'], y=data_sample['sales']))
 # bar_chart.show()
 st.plotly_chart(bar_chart, use_container_width=True)
 
 # Scatter plot
 # scatter_plot = px.scatter(x=x_data, y=y_data, title='Scatter Plot')
-scatter_plot = px.scatter(x=data_sample['company'], y=data_sample['sales'], title='Scatter Plot')
+scatter_plot = px.scatter(x=data_sample['year'], y=data_sample['sales'], title='Scatter Plot')
 # scatter_plot.show()
 st.plotly_chart(scatter_plot, use_container_width=True)
 
