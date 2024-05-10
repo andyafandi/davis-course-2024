@@ -17,6 +17,7 @@ conn = st.connection("mydb", type="sql", autocommit=True)
 # Perform query.
 df = conn.query('SELECT EnglishPromotionName, StartDate, EndDate, MaxQty from dimpromotion limit 10;', ttl=600)
 
+st.table(df)
 # Print results.
-for row in df.itertuples():
-    st.write(f"{row.EnglishPromotionName} , {row.MaxQty} ")
+# for row in df.itertuples():
+#     st.write(f"{row.EnglishPromotionName} , {row.MaxQty} ")
