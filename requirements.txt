@@ -8,6 +8,6 @@ pandas-datareader
 numpy
 datetime
 openpyxl
-mysqlclient==2.2.4
+mysqlclient
 SQLAlchemy
 
