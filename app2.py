@@ -10,7 +10,8 @@ st.bar_chart(chart_data)
 
 
 # Initialize connection.
-conn = st.connection('mysql', type='sql', username=st.secrets["DB_USER"], password=st.secrets["DB_PASS"], host=st.secrets["HOST"], database=st.secrets["DB"])
+# conn = st.connection('mysql', type='sql', username=st.secrets["DB_USER"], password=st.secrets["DB_PASS"], host=st.secrets["HOST"], database=st.secrets["DB"])
+conn = st.connection(**st.secrets.db_credentials)
 
 # Perform query.
 df = conn.query('SELECT * from dimpromotion limit 10;', ttl=600)
