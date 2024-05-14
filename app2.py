@@ -14,7 +14,7 @@ st.bar_chart(chart_data)
 # conn = st.connection('mysql', type='sql', username=st.secrets["DB_USER"], password=st.secrets["DB_PASS"], host=st.secrets["HOST"], database=st.secrets["DB"])
 # conn = st.connection(**st.secrets.db_credentials)
 conn = st.connection("mydb", type="sql", autocommit=True)
-st.write(st.secrets["connections.mydb"]["username"])
+# st.write(st.secrets["connections.mydb"]["username"])
 # Perform query.
 df = conn.query('SELECT EnglishPromotionName, StartDate, EndDate, MaxQty from dimpromotion limit 10;', ttl=600)
 
