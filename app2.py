@@ -5,7 +5,7 @@ import os
 
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 
-st.write(st.secrets["username"])
+st.write(st.secrets["connections.mydb"]["username"])
 st.bar_chart(chart_data)
 
 
